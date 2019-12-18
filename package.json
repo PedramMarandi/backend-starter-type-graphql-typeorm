@@ -4,30 +4,30 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "apollo-server-express": "^2.3.1",
+    "apollo-server-express": "^2.9.14",
     "bcryptjs": "^2.4.3",
-    "class-validator": "^0.9.1",
-    "dotenv": "^6.2.0",
-    "express": "^4.16.4",
+    "class-validator": "^0.11.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
     "express-jwt": "^5.3.1",
-    "graphql": "^14.0.2",
-    "jsonwebtoken": "^8.4.0",
-    "pg": "^7.8.0",
-    "reflect-metadata": "^0.1.12",
-    "type-graphql": "^0.16.0",
-    "typeorm": "^0.2.11"
+    "graphql": "^14.5.8",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^7.15.0",
+    "reflect-metadata": "^0.1.13",
+    "type-graphql": "^0.17.5",
+    "typeorm": "^0.2.21"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.2",
-    "@types/dotenv": "^6.1.0",
-    "@types/express": "^4.16.0",
-    "@types/express-jwt": "^0.0.41",
-    "@types/graphql": "^14.0.4",
-    "@types/jsonwebtoken": "^8.3.0",
-    "@types/node": "^10.12.18",
-    "ts-node": "^7.0.1",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.2",
+    "@types/express-jwt": "^0.0.42",
+    "@types/graphql": "^14.5.0",
+    "@types/jsonwebtoken": "^8.3.5",
+    "@types/node": "^12.12.20",
+    "ts-node": "^8.5.4",
     "ts-node-dev": "^1.0.0-pre.32",
-    "typescript": "^3.2.2"
+    "typescript": "^3.7.3"
   },
   "scripts": {
     "start": "ts-node-dev src/index.tsx"

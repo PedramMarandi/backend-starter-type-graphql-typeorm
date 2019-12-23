@@ -2,7 +2,7 @@ import { Resolver, Mutation, Arg } from "type-graphql";
 import bcrypt from "bcryptjs";
 import jsonwebtoken from "jsonwebtoken";
 require("dotenv").config();
-import { User } from "../../../entity/User";
+import { User } from "../../graphql-types/User";
 
 @Resolver()
 export class LoginResolver {

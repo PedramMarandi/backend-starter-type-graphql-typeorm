@@ -1,9 +1,10 @@
 import { MiddlewareFn } from "type-graphql";
-import { MyContext } from "../types/Context";
+import { MyContext } from "../app-types/Context";
 
 export const isAuth: MiddlewareFn<MyContext> = async ({ context }, next) => {
-  if (!context.user) {
-    throw new Error("User not authenticated");
+  //TODO: implement the logic for auth here
+  if(context.user) {
+    console.log("User it here");
   }
   return next();
 };

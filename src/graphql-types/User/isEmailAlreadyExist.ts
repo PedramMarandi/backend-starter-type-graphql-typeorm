@@ -5,11 +5,10 @@ import {
   ValidatorConstraintInterface
 } from "class-validator";
 
-import { User } from "../../../entity/User";
+import { User } from "./index";
 
 @ValidatorConstraint({ async: true })
-export class IsEmailAlreadyExistConstraint
-  implements ValidatorConstraintInterface {
+export class IsEmailAlreadyExistConstraint implements ValidatorConstraintInterface {
   validate(email: string) {
     return User.findOne({ where: { email } }).then(user => {
       if (user) return false;
